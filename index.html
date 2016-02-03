@@ -10,42 +10,51 @@
    <script src="myfont.typeface.js"></script>
  </head>
  <body>
- <a-assets>
-      <a-mixin id="font" text="font: myfont"></a-mixin>
-    </a-assets>
+<a-assets>
 
-   <a-scene>
+      <a-mixin id="font" text="font: myfont"></a-mixin>
+
+</a-assets>
+
+
+    <a-scene>
      
        <a-entity mixin="font" text="text: Hello"></a-entity>
-    <a-entity mixin="font" text="text: World"></a-entity>
-<a-entity position="0 0 0" rotation="0 0 0">
-  <a-animation attribute="rotation"
-               to="0 360 0"
-               dur="10000"
-               fill="forwards"
-               repeat="indefinite"></a-animation>
-                <a-model scale= "10 10 10" rotation= " 0 -80 0" src="pizza.dae" position="0 1 3"></a-model>   
+       <a-entity mixin="font" text="text: World"></a-entity>
+       <a-entity position="0 0 0" rotation="0 0 0">
+        
+         <a-animation attribute="rotation"
+        
+          to="0 360 0"
+        
+          dur="10000"
+        
+          fill="forwards"
+        
+          repeat="indefinite">
 
-     <a-cube rotation="0 1 0" position="0 3 1" radius="10" color="white" src="http://i.imgur.com/ps7NGDo.png">
-       <!-- <a-image src="http://i.imgur.com/ps7NGDo.png" width="2" height="2"></a-image> -->
-     </a-cube>
+          </a-animation>
+          
+                <a-model scale= "10 10 10" rotation= " 0 -80 0" src="pizza.dae" position="0 1 0"></a-model>   
 
-     <a-model scale= "10 10 10" rotation= " 0 -80 0" src="pizza.dae" position="0 1 3"></a-model>   
+                <a-cube rotation="0 1 0" position="0 3 0" radius="10" color="white" src="http://i.imgur.com/ps7NGDo.png">   </a-cube>
 
-     <a-cube rotation="0 1 0" position="0 3 1" radius="10" color="white" src="http://i.imgur.com/ps7NGDo.png">
-       <!-- <a-image src="http://i.imgur.com/ps7NGDo.png" width="2" height="2"></a-image> -->
-     </a-cube>
+                <!-- <a-model scale= "10 10 10" rotation= " 0 -80 0" src="pizza.dae" position="0 1 1"></a-model>    -->
+
+                <!-- <a-cube rotation="0 1 0" position="0 3 1" radius="10" color="white" src="http://i.imgur.com/ps7NGDo.png"> -->
+  
+              <!-- </a-cube> -->
 
           <a-model scale= "10 10 10" rotation= " 0 -80 0" src="pizza.dae" position="4 1 3"></a-model>   
 
           <a-cube rotation="0 1 0" position="4 3 3" radius="10" color="white" src="http://i.imgur.com/ps7NGDo.png"></a-cube>
-       <!-- <a-image src="http://i.imgur.com/ps7NGDo.png" width="2" height="2"></a-image> -->
+  
               <a-model scale= "10 10 10" rotation= " 0 -80 3" src="pizza.dae" position="-4 1 3"></a-model>   
 
               <a-cube rotation="0 1 0" position="-4 3 3" radius="10" color="white" src="http://i.imgur.com/ps7NGDo.png"></a-cube>
 
               </a-entity>
-       <!-- <a-image src="http://i.imgur.com/ps7NGDo.png" width="2" height="2"></a-image> -->
+      
      <a-plane rotation="-90 0 0" width="1000" height="1000" color="grey"></a-plane> 
 
      <a-sky color="white"></a-sky>
