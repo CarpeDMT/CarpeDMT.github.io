@@ -16,7 +16,6 @@
 
 </a-assets>
 
-
     <a-scene>
      
        <a-entity mixin="font" text="text: Hello"></a-entity>
@@ -30,21 +29,21 @@
         
           dur="10000"
         
-          fill="forwards"
+          fill="backwards"
         
           repeat="indefinite">
 
           </a-animation>
           
-                <!-- <a-model scale= "10 10 10" rotation= " 0 -80 0" src="pizza.dae" position="0 1 0"></a-model>    -->
-
-                <a-cube rotation="0 1 0" position="0 2.55 0" radius="10" color="white" src="http://i.imgur.com/ps7NGDo.png">   </a-cube>
+                <a-cube rotation="0 1 0" position="0 2.55 0" radius="1" color="white" src="http://i.imgur.com/ps7NGDo.png">   </a-cube>
 
              </a-entity>
       
     <a-entity position="0 0 2" rotation="0 0 0">
         
-         <a-animation attribute="rotation"
+         <a-animation
+
+               attribute="rotation"
         
                to="0 -360 0"
         
@@ -56,11 +55,9 @@
 
                </a-animation>
           
-           <a-model scale= "20 20 20" rotation= " 0 -80 0" src="pizza.dae" position="0 1 0"></a-model>    </a-entity>
+           <a-model scale= "20 20 20" rotation= " 0 -80 0" src="pizza.dae" position="0 1 0"
 
-                <!-- <a-cube rotation="0 1 0" position="0 2.55 0" radius="10" color="white" src="http://i.imgur.com/ps7NGDo.png">   </a-cube> -->
-
-         
+           sound="src: brodyquest.mp3; autoplay: true"></a-model>    </a-entity>
 
      <a-plane rotation="-90 0 0" width="1000" height="1000" color="grey"></a-plane> 
 
