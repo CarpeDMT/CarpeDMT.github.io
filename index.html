@@ -11,68 +11,58 @@
  <body>
 
 
-    <a-scene fog="type: linear; near: 2; far: 20; color: white">
-        
-       
-   <a-entity position="0 0 0" rotation="0 0 0">
-        
-         <a-animation attribute="rotation"
-          
-              from= "0 0 0"
-              to="0 360 0"
-              dur="3500"
-              fill="backwards"
-              repeat="indefinite">
+    <a-scene fog="type: linear; near: 2; far: 30; color: white">
+    <!-- <a-entity light="type: hemisphere; color: #FFF; groundColor: #000; intensity: 1"></a-entity> -->
+    <a-plane rotation="90 0 0" width="1000" height="1000" color="#669900"></a-plane> 
+    <a-sky src="white"></a-sky>
 
-           </a-animation>
-
-              <a-cube rotation="0 1 0" position="0 4 0" radius="1" color="white" src="http://i.imgur.com/aefsdlX.png">   </a-cube>
-
-           </a-entity>
-     
-
-
-    <a-entity position="0 0 0" rotation="0 0 0">
-        
+<a-entity position="0 0 0" rotation="0 0 0">
            <a-animation
-
                 attribute="rotation"
                 to="0 -360 0"
                 dur="3500"
                 fill="forwards"
                 repeat="indefinite">
-
            </a-animation>
-          
-                <a-model scale= "15 15 15" rotation= " 1 -80 1" src="pizza.dae" position="0 1 0">
-
-           
-
+              <a-model scale= "15 15 15" rotation= " 1 -80 1" src="pizza.dae" position="0 1 0">
      </a-entity>
 
-    
-  <a-entity position="0 0 0" rotation="0 0 0">
-        
-         <a-animation attribute="rotation"
-          
+     <a-model scale= "1.2 1.2 1.2" rotation= " 0 80 0" src="trees.dae" position="0 0 0" rotation="0 180 0"> </a-model>  
+
+
+
+
+   <a-entity position="0 0 0" rotation="0 0 0">
+           <a-animation attribute="rotation"
               from= "0 0 0"
               to="0 360 0"
               dur="3500"
               fill="backwards"
               repeat="indefinite">
-
            </a-animation>
+              <a-cube rotation="0 1 0" position="0 4 0" radius="1" color="white" src="http://i.imgur.com/aefsdlX.png">   </a-cube>
+    </a-entity>
+     
 
-              <a-cube rotation="0 1 0" position="0 2.5 0" radius="1" color="white" src="http://i.imgur.com/fmdyy8Q.gif">   </a-cube>
 
-           </a-entity>
-
-     <a-plane rotation="90 0 0" width="1000" height="1000" color="#669900"></a-plane> 
-
-     <a-sky src="white"></a-sky>
     
 
-    <a-model scale= "1.2 1.2 1.2" rotation= " 0 80 0" src="trees.dae" position="0 0 0" rotation="0 180 0"> </a-model>  
+    
+  <a-entity position="0 0 0" rotation="0 0 0">
+           <a-animation attribute="rotation"
+              from= "0 0 0"
+              to="0 360 0"
+              dur="3500"
+              fill="backwards"
+              repeat="indefinite">
+           </a-animation>
+             <a-cube rotation="0 1 0" position="0 2.5 0" radius="1" color="white" src="http://i.imgur.com/fmdyy8Q.gif">   </a-cube>
+   </a-entity>
+
+     
+    
+
+    
    
     <a-model scale= "1.2 1.2 1.2" rotation= " 0 80 0" src="pedestal.dae" position="0 0 0" rotation="0 180 0"> </a-model> 
    
