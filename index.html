@@ -1,0 +1,82 @@
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+   <meta charset="utf-8">
+   <title>Hello, Pizza!</title>
+   <meta name="description" content="Pizza' • A-Frame">
+   <script src="https://aframe.io/releases/0.1.2/aframe.min.js" ></script>
+ </head>
+ <body>
+
+
+    <a-scene fog="type: linear; near: 2; far: 30; color: white">
+    <a-entity light="type: hemisphere; color: #FFF; groundColor: #000; intensity: 1"></a-entity>
+    <a-plane rotation="90 0 0" width="1000" height="1000" color="#669900"></a-plane> 
+    <a-sky src="yellow"></a-sky>
+
+<a-model scale= "1.2 1.7 1.2" rotation= " 0 70 0" src="trees.dae" position="0 0 0" rotation="0 180 0" > </a-model>  
+
+<a-entity position="0 0 2" rotation="0 0 0">
+           <a-animation
+                attribute="rotation"
+                to="0 -360 0"
+                dur="4000"
+                fill="forwards"
+                ease-in-out-cubic
+                repeat="indefinite">
+           </a-animation>
+              <a-model scale= "10 11 10" rotation= " 1 -80 -5" src="pizza.dae" position="0 1.2 0" sound="src: Mashed Potatoes.wav; autoplay: true; volume : .1 ">
+     </a-entity>
+
+     
+      
+  <a-entity position= "30 10 30" rotation= "0 0 0"> 
+     <a-light 
+
+             color= "orange"
+             intensity= ".4">
+
+    </a-light>
+ </a-entity>
+
+
+
+
+  <a-entity position="10 0 20" rotation="0 0 0">
+           <a-animation attribute="rotation"
+              from= "0 0 0"
+              to="0 360 0"
+              dur="3500"
+              fill="backwards"
+              repeat="indefinite">
+           </a-animation>
+             <a-cube rotation="0 1 0" position="0 2.5 0" radius="1" color="red" src="http://i.imgur.com/fmdyy8Q.gif">   </a-cube>
+   </a-entity>
+   <a-entity position="10 0 20" rotation="0 0 0">
+           <a-animation attribute="rotation"
+              from= "0 0 0"
+              to="0 360 0"
+              dur="3500"
+              fill="backwards"
+              repeat="indefinite">
+           </a-animation>
+              <a-cube rotation="0 1 0" position="0 4 0" radius="1" color="blue" src="http://i.imgur.com/aefsdlX.png">   </a-cube>
+    </a-entity>
+   </a-scene>
+ </body>
+</html>1
