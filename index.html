@@ -1,4 +1,4 @@
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+﻿<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
@@ -24,12 +24,12 @@
  <body>
 
 
-    <a-scene fog="type: linear; near: 2; far: 30; color: white">
+    <a-scene fog="type: linear; near: 2; far: 25; color: white">
     <a-entity light="type: hemisphere; color: #FFF; groundColor: #000; intensity: 1"></a-entity>
     <a-plane rotation="90 0 0" width="1000" height="1000" color="#669900"></a-plane> 
     <a-sky src="yellow"></a-sky>
 
-<a-model scale= "1.2 1.7 1.2" rotation= " 0 70 0" src="trees.dae" position="0 0 0" rotation="0 180 0" > </a-model>  
+<a-model scale= "1.2 2.0 1.2" rotation= " 0 70 0" src="trees.dae" position="0 0 0" rotation="0 180 0" > </a-model>  
 
 <a-entity position="0 0 2" rotation="0 0 0">
            <a-animation
@@ -65,7 +65,7 @@
               fill="backwards"
               repeat="indefinite">
            </a-animation>
-             <a-cube rotation="0 1 0" position="0 2.5 0" radius="1" color="red" src="http://i.imgur.com/fmdyy8Q.gif">   </a-cube>
+             <a-cube rotation="0 1 0" position="0 2.5 0" radius="1" color="white" src="http://i.imgur.com/fmdyy8Q.gif">   </a-cube>
    </a-entity>
    <a-entity position="10 0 20" rotation="0 0 0">
            <a-animation attribute="rotation"
@@ -75,7 +75,7 @@
               fill="backwards"
               repeat="indefinite">
            </a-animation>
-              <a-cube rotation="0 1 0" position="0 4 0" radius="1" color="blue" src="http://i.imgur.com/aefsdlX.png">   </a-cube>
+              <a-cube rotation="0 1 0" position="0 4 0" radius="1" color="white" src="http://i.imgur.com/aefsdlX.png">   </a-cube>
     </a-entity>
    </a-scene>
  </body>
