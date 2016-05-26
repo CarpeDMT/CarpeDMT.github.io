@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.76.0 commit date:2015-11-03, commit time:10:56, hash:f337fea</authoring_tool>
     </contributor>
-    <created>2016-05-26T17:38:46</created>
-    <modified>2016-05-26T17:38:46</modified>
+    <created>2016-05-26T19:06:19</created>
+    <modified>2016-05-26T19:06:19</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -101,7 +101,14 @@
       </extra>
     </light>
   </library_lights>
-  <library_images/>
+  <library_images>
+    <image id="material_1_png" name="material_1_png">
+      <init_from>material_1.png</init_from>
+    </image>
+    <image id="material_3_jpg" name="material_3_jpg">
+      <init_from>material_3.jpg</init_from>
+    </image>
+  </library_images>
   <library_effects>
     <effect id="Material_001-effect">
       <profile_COMMON>
