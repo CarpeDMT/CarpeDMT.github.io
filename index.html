@@ -1,39 +1,29 @@
-﻿
-<meta name="theme-color" content="#ffffff">
-   <meta charset="utf-8">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta content="#ffffff" name="theme-color" />
+   <meta charset="utf-8" />
    <title>Hello, Pizza!</title>
-   <meta name="description" content="Pizza' • A-Frame">
-   <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
- </head>
- <body>
+   <meta content="Pizza' • A-Frame" name="description" />
+   <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+ <script src="https://aframe.io/releases/0.3.2/aframe-inspector.min.js"></script></head>
+ <body class="a-body aframe-inspector-opened">
 
 
-    <a-scene fog="type: linear; near: 2; far: 25; color: white">
-    <a-entity light="type: hemisphere; color: #FFF; groundColor: #000; intensity: 1"></a-entity>
-	<a-plane rotation= "-90 0 0" position= "0 -.2 0" color="#94a550" height="100" width="100"></a-plane>
-    <a-sky src="yellow"></a-sky>
+    <a-scene fog="type: linear; near: 2; far: 25; color: white" class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" vr-mode-ui="">
+    <a-entity light="type: hemisphere; color: #FFF; groundColor: #000; intensity: 1" position="" rotation="" scale="" visible=""></a-entity>
+	<a-plane width="100" height="100" color="#94a550" position="0 -.2 0" rotation="-90 0 0" material="" geometry="" scale="" visible=""></a-plane>
+    <a-sky src="yellow" material="" geometry="" scale="" position="" rotation="" visible=""></a-sky>
 
-<a-collada-model scale= "1.2 2.0 1.2" rotation= " 0 70 0" src="trees.dae" position="0 0 0" rotation="0 180 0" > </a-collada-model>  
+<a-collada-model position="0 0 0" src="trees.dae" rotation=" 0 70 0" scale="1.2 2.0 1.2" material="" collada-model="" visible=""> </a-collada-model>  
 
-<a-entity position="0 0 2" rotation="0 0 0">
-           <a-animation
-                attribute="rotation"
-                to="0 -360 0"
-                dur="4000"
-                fill="forwards"
-                ease-in-out-cubic
-                repeat="indefinite">
+<a-entity rotation="0 0 0" position="0 0 2" scale="" visible="">
+           <a-animation repeat="indefinite" ease-in-out-cubic="" fill="forwards" dur="4000" to="0 -360 0" attribute="rotation">
            </a-animation>
-              <a-collada-model scale= ".3 .3 .3" rotation= " 1 -80 -5" src="otherpizza.dae" position="0 1.2 0" sound="src: Mashed Potatoes.wav; autoplay: true; volume : .1 ">
-     </a-entity>
+              <a-collada-model sound="src: Mashed Potatoes.wav; autoplay: true; volume : .1 " position="0 1.2 0" src="otherpizza.dae" rotation=" 1 -80 -5" scale=".3 .3 .3" material="" collada-model="" visible="">
+     </a-collada-model></a-entity>
 
      
       
-  <a-entity position= "30 10 30" rotation= "0 0 0"> 
-     <a-light 
-
-             color= "orange"
-             intensity= ".4">
+  <a-entity rotation="0 0 0" position="30 10 30" scale="" visible=""> 
+     <a-light intensity=".4" color="orange" light="" position="" rotation="" scale="" visible="">
 
     </a-light>
  </a-entity>
@@ -41,6 +31,7 @@
 
 
 
-   </a-scene>
- </body>
-</html>
+   <canvas class="a-canvas a-grab-cursor" data-aframe-canvas="true" width="2560" height="1388" style="width: 1280px; height: 694px;"></canvas><a-entity camera="" position="" rotation="" scale="" visible=""></a-entity></a-scene>
+ 
+
+<textarea style="font-size: 12pt; border: 0px none; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px;" readonly="readonly"></textarea></body></html>
