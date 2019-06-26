@@ -1,46 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script> 
+    <script src="https://unpkg.com/super-hands@3.0.0/dist/super-hands.min.js"></script> 
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script> 
 
-<meta name="theme-color" content="#ffffff">
-   <meta charset="utf-8">
-   <title>Hello, Pizza!</title>
-   <meta name="description" content="Pizza' • A-Frame">
-   <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
- </head>
- <body>
-
-
-    <a-scene fog="type: linear; near: 2; far: 25; color: white">
-    <a-entity light="type: hemisphere; color: #FFF; groundColor: #000; intensity: 1.9"></a-entity>
-	<a-plane rotation= "-90 0 0" position= "0 -.2 0" color="#94a550" height="100" width="100"></a-plane>
-    <a-sky src="green"></a-sky>
-
-<a-collada-model scale= "2.0 2.15 2.0" rotation= " 0 70 0" src="trees.dae" position="0 -0.09 0" rotation="0 180 0" > </a-collada-model>  
-
-<a-entity position="0 0 -2" rotation="0 0 0">
-           <a-animation
+  </head>
+  <body>
+    <a-scene background="color: ">
+      <a-assets>
+      <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+    </a-assets>
+    <a-entity>
+      <a-camera></a-camera>
+      <a-entity sphere-collider="objects: a-box" super-hands hand-controls="left"></a-entity>
+      <a-entity sphere-collider="objects: a-box" super-hands hand-controls="right"></a-entity>
+    </a-entity>
+      <a-entity text-geometry="value: VIRTUAL REALITY"></a-entity>
+    <a-entity text-geometry="value: PIZZA; font: #optimerBoldFont"></a-entity>
+      <! HERE IS THE ENVIRONMENT >
+      
+      <a-entity environment="preset: forest; lighting: distant; lightPosition: 0 180 90; playArea: 1; groundColor: #226837; groundTexture: none; dressingColor: #226837; dressingAmount: 2000; flatShading: false; skyType: gradient; ground: hills; groundYScale: 50; horizonColor: #ffffff" ></a-entity>
+      <a-entity> 
+        <a-obj-model src="https://cdn.glitch.com/02045175-eb92-4fa4-8493-9e58fae65dee%2Fmodel.obj?v=1561493714096" mtl="https://cdn.glitch.com/02045175-eb92-4fa4-8493-9e58fae65dee%2Fmaterials.mtl?v=1561493713585" scale= "26.472 30 26.472" position = "1 1.148 6" rotation = "-6.318 -50.22 0.921"></a-obj-model> </a-entity>
+    
+    <a-entity position="0 0 -2" rotation="0 0 0">
+           <!--<a-animation
                 attribute="rotation"
                 to="0 -360 0"
                 dur="4000"
                 fill="forwards"
                 ease-in-out-cubic
                 repeat="indefinite">
-           </a-animation>
-              <a-collada-model scale= ".15 .25 .15" rotation= " 1 -80 -5" src="otherpizza.dae" position="0 1.2 0" sound="src: Mashed Potatoes.wav; autoplay: true; volume : .1 ">
+           </a-animation>-->
+        <a-obj-model scale= ".15 .25 .15" rotation= " 1 -80 -5" src="hhttps://cdn.glitch.com/02045175-eb92-4fa4-8493-9e58fae65dee%2Fotherpizza.obj?v=1561511781317" mtl= "https://cdn.glitch.com/02045175-eb92-4fa4-8493-9e58fae65dee%2Fotherpizza.mtl?v=1561511780021"  position="0 1.2 0" ></a-obj-model>
      </a-entity>
-
-     
-      
-  <a-entity position= "30 10 30" rotation= "0 0 0"> 
-     <a-light 
-
-             color= "orange"
-             intensity= ".4">
-
-    </a-light>
- </a-entity>
-
-
-
-
-   </a-scene>
- </body>
+    
+    </a-scene>
+  </body>
 </html>
