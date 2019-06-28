@@ -29,18 +29,27 @@
       <a-entity> 
         <a-obj-model src="https://cdn.glitch.com/02045175-eb92-4fa4-8493-9e58fae65dee%2Fmodel.obj?v=1561493714096" mtl="https://cdn.glitch.com/02045175-eb92-4fa4-8493-9e58fae65dee%2Fmaterials.mtl?v=1561493713585" scale= "26.472 30 26.472" position = "1 1.148 6" rotation = "-6.318 -50.22 0.921"></a-obj-model> </a-entity>
     
-    <a-entity position="0 0 -2" rotation="0 0 0">
-           <!--<a-animation
-                attribute="rotation"
-                to="0 -360 0"
-                dur="4000"
-                fill="forwards"
-                ease-in-out-cubic
-                repeat="indefinite">
-           </a-animation>-->
-        <a-obj-model scale= ".15 .25 .15" rotation= " 1 -80 -5" src="otherpizza.obj" mtl= "otherpizza.mtl"  position="0 1.2 0" ></a-obj-model>
+    <a-entity position="0 0 -2" rotation="0 0 0"
+           animation = "
+                property: rotation;
+                to: 0 -360 0;
+                dur: 4000;
+                fill: forwards;
+                ease-in-out-cubic;
+                repeat: indefinite;">
+
+
+        <a-obj-model scale= ".15 .25 .15" rotation= " 1 -80 -5" src="otherpizza.obj" mtl= "otherpizza.mtl"  position="3 1.2 -13" ></a-obj-model>
      </a-entity>
-    
+     <a-entity  animation = "
+                property: rotation;
+                to: 0 -360 0;
+                dur: 4000;
+                fill: forwards;
+                ease-in-out-cubic;
+                repeat: indefinite;">
+     <a-gltf-model scale= ".15 .25 .15" rotation= " 1 -80 -5" src="pizza.gltf"  position="0 1.2 0" ></a-gltf-model>
+    </a-entity>
     </a-scene>
   </body>
 </html>
