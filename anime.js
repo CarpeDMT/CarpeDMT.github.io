@@ -2,6 +2,7 @@
  * anime.js v3.0.1
  * (c) 2019 Julian Garnier
  * Released under the MIT license
+ * animejs.com
  */
 
 'use strict';
